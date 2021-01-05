@@ -6,7 +6,9 @@ const TodoList = () => {
     return(
         <div className="todo-container">
             <ul className="todo-list">
-                <Todo/>
+                {todos.map(todo => (
+                    <Todo  text={todo.text} />
+                ))}
             </ul>
         </div>
     );
