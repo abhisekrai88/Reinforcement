@@ -2,7 +2,7 @@ import React from "react";
 //import components
 import Todo from "./Todo"
 
-const TodoList = () => {
+const TodoList = ({ todos }) => {
     return(
         <div className="todo-container">
             <ul className="todo-list">
